@@ -1,0 +1,196 @@
+{
+  "currency": "EUR",
+  "vatIncluded": true,
+  "lastUpdated": "2026-01-24",
+  "vehicleCategories": ["personenauto", "bedrijfswagen", "oldtimer"],
+  "meta": {
+    "disclaimer": "Indicatie is adviserend; exacte prijs wordt altijd vooraf bevestigd.",
+    "notes": [
+      "Alle vaste prijzen zijn incl. btw.",
+      "Waar 'v.a.' of 'range' staat: prijs hangt af van voertuig, onderdelenkeuze en toegangstijd.",
+      "Remmen, glas, airco, motor/aandrijving en carrosserie blijven deels offerte-gedreven: veiligheid en variatie zijn te groot voor vaste forfaits."
+    ]
+  },
+  "services": {
+    "checks": {
+      "label": "Checks & inspecties",
+      "options": [
+        { "key": "keuring_basis", "label": "Keuring-check — Basis", "price": 39, "priceInclVat": 39 },
+        { "key": "keuring_uitgebreid", "label": "Keuring-check — Uitgebreid", "price": 79, "priceInclVat": 79 },
+        { "key": "keuring_premium", "label": "Keuring-check — Premium", "priceFrom": 129, "priceFromInclVat": 129 },
+
+        { "key": "wintercheck_basis", "label": "Wintercheck — Basis", "price": 39, "priceInclVat": 39 },
+        { "key": "wintercheck_uitgebreid", "label": "Wintercheck — Uitgebreid", "price": 79, "priceInclVat": 79 },
+        { "key": "wintercheck_winterklaar", "label": "Wintercheck — Winterklaar maken", "priceFrom": 119, "priceFromInclVat": 119 },
+
+        { "key": "zomercheck_basis", "label": "Zomercheck — Basis", "price": 39, "priceInclVat": 39 },
+        { "key": "zomercheck_uitgebreid", "label": "Zomercheck — Uitgebreid", "price": 69, "priceInclVat": 69 },
+        { "key": "zomercheck_airco_addon", "label": "Zomercheck — Airco service add-on", "priceFrom": 119, "priceFromInclVat": 119 },
+
+        { "key": "vakantiecheck_basis", "label": "Vakantiecheck — Basis", "price": 49, "priceInclVat": 49 },
+        { "key": "vakantiecheck_plus", "label": "Vakantiecheck — Vakantiecheck Plus", "price": 89, "priceInclVat": 89 },
+        { "key": "vakantiecheck_vertrekklaar", "label": "Vakantiecheck — Vertrekklaar maken", "priceFrom": 129, "priceFromInclVat": 129 }
+      ],
+      "note": "Handler 'keuring' en 'checks' in de chatbot gebruikt deze lijst via getServiceList('checks')."
+    },
+
+    "onderhoud": {
+      "label": "Onderhoud",
+      "personenauto": {
+        "label": "Onderhoud personenauto",
+        "options": [
+          { "key": "basic", "label": "Onderhoud – Basic (olie + filter)", "price": 159, "priceInclVat": 159 },
+          { "key": "plus", "label": "Onderhoud – Plus (olie + meerdere filters)", "price": 259, "priceInclVat": 259 },
+          { "key": "diesel_focus", "label": "Diesel onderhoud – Focus", "price": 319, "priceInclVat": 319 }
+        ],
+        "addons": [
+          { "key": "remvloeistof", "label": "Remvloeistof verversen", "priceRange": [79, 129], "priceRangeInclVat": [79, 129] },
+          { "key": "koelvloeistof", "label": "Koelvloeistof service", "priceRange": [69, 119], "priceRangeInclVat": [69, 119] },
+          { "key": "snelle_diagnose", "label": "Snelle diagnose bij klacht", "priceRange": [49, 89], "priceRangeInclVat": [49, 89] },
+          { "key": "keuring_quick", "label": "Keuring-proof quick check", "priceRange": [39, 69], "priceRangeInclVat": [39, 69] },
+          { "key": "service_reset", "label": "Service reset / interval reset", "priceRange": [0, 25], "priceRangeInclVat": [0, 25] }
+        ]
+      },
+      "bedrijfswagen": {
+        "label": "Onderhoud bedrijfswagen",
+        "options": [
+          { "key": "klein", "label": "Klein onderhoud", "priceRange": [199, 299], "priceRangeInclVat": [199, 299] },
+          { "key": "groot", "label": "Groot onderhoud", "priceRange": [329, 499], "priceRangeInclVat": [329, 499] }
+        ],
+        "addons": [
+          { "key": "remvloeistof", "label": "Remvloeistof service", "priceRange": [89, 129], "priceRangeInclVat": [89, 129] },
+          { "key": "koelvloeistof", "label": "Koelvloeistof service", "priceRange": [99, 179], "priceRangeInclVat": [99, 179] },
+          { "key": "snelle_diagnose", "label": "Snelle diagnose bij klacht", "priceRange": [49, 89], "priceRangeInclVat": [49, 89] },
+          { "key": "keuring_quick", "label": "Keuring-proof quick check", "priceRange": [39, 69], "priceRangeInclVat": [39, 69] },
+          { "key": "service_reset", "label": "Service reset / interval reset", "priceRange": [0, 25], "priceRangeInclVat": [0, 25] }
+        ]
+      },
+      "oldtimer": {
+        "label": "Onderhoud oldtimer",
+        "options": [
+          { "key": "klein", "label": "Klein onderhoud", "priceFrom": 119, "priceFromInclVat": 119 },
+          { "key": "groot", "label": "Groot onderhoud", "priceFrom": 229, "priceFromInclVat": 229 }
+        ],
+        "addons": [
+          { "key": "remvloeistof", "label": "Remvloeistof service", "priceRange": [89, 129], "priceRangeInclVat": [89, 129] },
+          { "key": "koelvloeistof", "label": "Koelvloeistof service", "priceRange": [69, 139], "priceRangeInclVat": [69, 139] },
+          { "key": "snelle_diagnose", "label": "Snelle diagnose bij klacht", "priceRange": [49, 89], "priceRangeInclVat": [49, 89] },
+          { "key": "keuring_quick", "label": "Keuring-proof quick check", "priceRange": [39, 69], "priceRangeInclVat": [39, 69] },
+
+          { "key": "distributie", "label": "Distributieriem", "priceFrom": 499, "priceFromInclVat": 499 },
+          { "key": "remmen", "label": "Remmen vervangen", "priceFrom": 249, "priceFromInclVat": 249 },
+          { "key": "koppeling", "label": "Koppeling vervangen", "priceFrom": 699, "priceFromInclVat": 699 },
+
+          { "key": "service_reset", "label": "Service reset / interval reset", "priceRange": [0, 25], "priceRangeInclVat": [0, 25] }
+        ]
+      },
+      "note": "Chatbot-handler 'onderhoud' vereist category: personenauto/bedrijfswagen/oldtimer."
+    },
+
+    "banden": {
+      "label": "Banden & balanceren",
+      "options": [
+        { "key": "wissel_stuk", "label": "Volledige wissel incl. balanceren — per stuk", "price": 20, "priceInclVat": 20 },
+        { "key": "wissel_set4", "label": "Volledige wissel incl. balanceren — set van 4", "price": 75, "priceInclVat": 75 },
+        { "key": "plug", "label": "Lekke band herstellen (plug, inspectie inbegrepen)", "price": 12.5, "priceInclVat": 12.5 },
+        { "key": "verwijderen_stuk", "label": "Banden verwijderen (losse velg) — per stuk", "price": 5, "priceInclVat": 5 },
+        { "key": "verwijderen_set4", "label": "Banden verwijderen (losse velg) — set van 4", "price": 15, "priceInclVat": 15 },
+        { "key": "tweedehands_stuk", "label": "Tweedehands banden — per stuk", "priceFrom": 20, "priceFromInclVat": 20 },
+        { "key": "tweedehands_set4", "label": "Tweedehands banden — set van 4", "priceFrom": 80, "priceFromInclVat": 80 }
+      ]
+    },
+
+    "verlichting": {
+      "label": "Verlichting",
+      "options": [
+        { "key": "koplens", "label": "Koplens polijsten", "priceFrom": 79, "priceFromInclVat": 79 },
+        { "key": "lamp", "label": "Lamp vervangen", "priceFrom": 15, "priceFromInclVat": 15 },
+        { "key": "diagnose", "label": "Verlichting diagnose", "priceFrom": 69, "priceFromInclVat": 69 },
+        { "key": "afstellen", "label": "Afstellen koplampen", "priceRange": [25, 49], "priceRangeInclVat": [25, 49] }
+      ]
+    },
+
+    "remmen": {
+      "label": "Remmen (blokken/schijven)",
+      "forfait": false,
+      "note": "Geen vaste forfait; prijs na inspectie en offerte (voertuig + onderdelenkeuze)."
+    },
+
+    "diagnose": {
+      "label": "Diagnose / uitlezen",
+      "options": [
+        { "key": "snelcheck", "label": "Snelcheck diagnose", "price": 45, "priceInclVat": 45 },
+        { "key": "probleem", "label": "Specifieke probleemdiagnose", "price": 75, "priceInclVat": 75 },
+        { "key": "uitgebreid", "label": "Uitgebreide diagnose", "priceFrom": 149, "priceFromInclVat": 149 },
+
+        { "key": "rooktest", "label": "Rook-/vacuumlek test", "price": 49, "priceInclVat": 49 },
+        { "key": "egr_dpf", "label": "EGR/DPF diagnose", "priceFrom": 89, "priceFromInclVat": 89 },
+        { "key": "brandstof", "label": "Brandstofsysteem test", "priceFrom": 79, "priceFromInclVat": 79 },
+        { "key": "koeling", "label": "Koelsysteem druktest", "price": 39, "priceInclVat": 39 },
+        { "key": "laad_start", "label": "Laad- & starttest", "price": 25, "priceInclVat": 25 },
+        { "key": "abs_esp_airbag", "label": "ABS/ESP/Airbag storingen", "priceFrom": 59, "priceFromInclVat": 59 }
+      ]
+    },
+
+    "onderstel": {
+      "label": "Onderstel",
+      "options": [
+        { "key": "brugcheck", "label": "Onderstel-check op brug", "price": 59, "priceInclVat": 59 },
+        { "key": "geluid", "label": "Gerichte diagnose onderstelgeluid", "priceRange": [75, 120], "priceRangeInclVat": [75, 120] }
+      ],
+      "note": "Onderdelen/vervanging altijd via offerte."
+    },
+
+    "diesel": {
+      "label": "Diesel techniek (DPF/EGR)",
+      "options": [
+        { "key": "basis", "label": "Basis scan + interpretatie", "price": 89, "priceInclVat": 89 },
+        { "key": "dpf_euro45", "label": "DPF diagnose (Euro 4/5)", "price": 89, "priceInclVat": 89 },
+        { "key": "regen", "label": "Regeneratie / roettest-klaar (na diagnose)", "priceFrom": 149, "priceFromInclVat": 149 },
+        { "key": "euro3", "label": "Euro 3 en ouder – afstelling", "priceFrom": 119, "priceFromInclVat": 119 }
+      ]
+    },
+
+    "airco": {
+      "label": "Airco",
+      "forfait": false,
+      "note": "Momenteel geen vaste prijzen geconfigureerd; prijs na diagnose/voertuiginfo."
+    },
+
+    "glas": {
+      "label": "Ramen & glas",
+      "forfait": false,
+      "note": "Geen vaste forfait; prijs na voertuiginfo en schade-inschatting."
+    },
+
+    "motor_aandrijving": {
+      "label": "Motor & aandrijving",
+      "forfait": false,
+      "note": "Geen vaste forfait; prijs na diagnose en offerte."
+    },
+
+    "pdr": {
+      "label": "PDR (uitdeuken zonder spuiten)",
+      "forfait": false,
+      "note": "Geen vaste forfait; prijs afhankelijk van paneel/maat/toegang."
+    },
+
+    "elektrisch": {
+      "label": "Elektrisch / elektronica",
+      "options": [
+        { "key": "snelcheck", "label": "Elektrische snelcheck (basis meting)", "price": 45, "priceInclVat": 45 },
+        { "key": "stroomlek", "label": "Stroomlek / parasitaire verbruiker test", "priceFrom": 89, "priceFromInclVat": 89 },
+        { "key": "laad_start", "label": "Laad- & starttest", "price": 25, "priceInclVat": 25 },
+        { "key": "zekering_relais", "label": "Zekering/relais/massa diagnose", "priceFrom": 69, "priceFromInclVat": 69 },
+        { "key": "canbus", "label": "CAN-bus / module diagnose", "priceFrom": 99, "priceFromInclVat": 99 }
+      ],
+      "note": "Elektrische problemen zijn vaak symptoom-gedreven; exacte prijs kan pas na meting bevestigd worden."
+    },
+
+    "carrosserie": {
+      "label": "Carrosserie / roest / lak",
+      "forfait": false,
+      "note": "Offerte-werk: prijs hangt af van grootte, paneel, toegang, roestdiepte en afwerkingsniveau. Vraag foto's + voertuiginfo voor snelle indicatie."
+    }
+  }
+}
